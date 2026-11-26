@@ -107,9 +107,9 @@ body::before {
 
     /*Background content*/
     background: hsla(156, 156, 156, 35%, 58%, 1);
-    background: radial-gradient(circle, rgb(156, 156, 156, .30) 0%, rgb(245, 245, 245, 0.30) 100%);
-    background: -moz-radial-gradient(circle, rgb(187, 187, 187, .30) 0%, rgba(255, 255, 255, 0.30) 100%);
-    background: -webkit-radial-gradient(circle, rgb(187, 187, 187, .30) 0%, rgba(252, 252, 253, 0.30) 100%);
+    background: radial-gradient(circle, rgba(85, 85, 85, 0.3) 0%, rgba(102, 102, 102, 0.4) 100%);
+    background: -moz-radial-gradient(circle, rgba(85, 85, 85, 0.3) 0%, rgba(102, 102, 102, 0.4) 100%);
+    background: -webkit-radial-gradient(circle, rgba(85, 85, 85, 0.4) 0%, rgba(102, 102, 102, 0.4) 100%);
 
     /*Border*/
     padding: 2dvh;
