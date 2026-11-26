@@ -42,6 +42,12 @@
                 The project is in progress, but I can't wait to go into greater detail once my
                 team is ready for public viewing!
             </p>
+            <p>In the meantime, here is our current design architecture</p>
+            <figure class="article-figure">
+                <img src="assets/architecture-early.png" alt="Early architecture planning for capstone" width="1200"
+                    height="675" loading="lazy">
+                <figcaption>Early prototype of the prediction dashboard</figcaption>
+            </figure>
 
             <div class="article-details">
                 <div class="skills">
@@ -76,8 +82,17 @@
     <div id="logic-agent" class="article">
         <div>
             <h1>Logic Proposition Agent</h1>
-            <p>A logic proposition unifying agent that takes two first-order logic statements
-                in Backus-Naur form and returns the most general unifier of those two statements.
+            <p>
+                Unification is the engine behind automated reasoning. Prolog and resolution-based
+                theorem provers depend on it to decide when two logical statements can be made
+                identical. This agent takes two first-order logic statements written in
+                Backus-Naur form and returns their most general unifier: the simplest set of
+                variable substitutions that makes the statements match.
+            </p>
+            <p>
+                The agent parses each statement into a structured term tree, walks both trees
+                side by side, and binds variables as it goes. When two structures clash,
+                it reports that no unifier exists.
             </p>
 
             <div class="article-details">
@@ -95,7 +110,7 @@
                     <h3>Links:</h3>
                     <ul>
                         <li>
-                            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener"
+                            <a href="https://github.com/mikl81/Logic-Agent" target="_blank" rel="noopener"
                                 aria-label="GitHub repository">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor">
                                     <!--Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
@@ -112,11 +127,24 @@
     <div id="crud-database" class="article">
         <div>
             <h1>CRUD Database</h1>
-            <p>A relational database that provides the theoretical
-                backend of a gaming review website, "Bits-N-Fixels".
-                Service runs on a NodeJS with MySQL database, displayed using
-                a Handlebars engine.
-            </p>
+            <div class="about-text">
+                <p>
+                    Bits-N-Fixels is the theoretical backend of a gaming review website. I built it as the final
+                    project for CS340 to practice designing a relational database and wiring it to a working application
+                    from schema to screen.
+                </p>
+                <p>
+                    A NodeJS server runs SQL queries against a MySQL database and passes the results to
+                    Handlebars templates that render each page. A simple web UI exposes the full
+                    create, read, update, and delete cycle, so every operation can be tested from the
+                    browser.
+                </p>
+            </div>
+            <figure class="article-figure">
+                <img src="assets/Bits-N-Pixels.png" alt="Bits-N-Fixels home page" width="1200" height="675"
+                    loading="lazy">
+                <figcaption>The Bits-N-Fixels game listing page</figcaption>
+            </figure>
 
             <div class="article-details">
                 <div class="skills">
